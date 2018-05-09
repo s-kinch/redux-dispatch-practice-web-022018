@@ -26,5 +26,5 @@ export function dispatch(action = '@@INIT'){
 }
 
 export function render(){
-  document.getElementById('container').innerHTML = `<ul>${state.pets.map(pet => `<li>${pet.name}</li>`)}</ul>`
+  document.getElementById('container').innerHTML = `<ul>${state.pets.map(pet => `<li>${pet.name}</li>`).join('')}</ul>`
 }
